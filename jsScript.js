@@ -18,11 +18,14 @@ function showPositionOnMap(position){
 	longitude = position.coords.longitude;
 	console.log("showPositionOnMap()");
 	var latlon = latitude+","+longitude;
-	var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=12&size=600x400&sensor=false&key=AIzaSyDjgKOE6WARQyp-6UWwTNbSf1eB7aQO8XU";
+	var w = Math.floor(parseInt(window.innerWidth)*0.75);
+	var h = Math.floor(parseInt(window.innerHeight)*0.6);
+	var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=11&size="+w+"x"+h+"&sensor=false&key=AIzaSyDjgKOE6WARQyp-6UWwTNbSf1eB7aQO8XU";
 	document.getElementById('firstPage').style.visibility = 'hidden';
-	var mapImage = "<img src='"+img_url+"' alt='Location' />";
+	// var mapImage = "<img src='"+img_url+"' alt='Location' id='locationImage' />";
 	// pos.appendChild(mapImage);
-	$(pos).append(mapImage);
+	// $(pos).append(mapImage);
+	document.getElementById('locationImage').src = img_url;
 	$('.secondPage').css("visibility",'visible');
 	// document.getElementsByClassName('secondPage').style.visibility = 'visible';
 }

@@ -19,27 +19,31 @@
 <section>
 	<div class="container">
 		<div class="row" id="firstPage">
-			<div class="col-md-5"></div>
-			<div class="col-md-2">
+			<div class="col-md-5 col-xs-3 col-sm-4"></div>
+			<div class="col-md-2 col-xs-6 col-sm-4">
 				<button class="btn btn-primary" id="fetchCurrentLocation">Fetch Current Location</button>
 			</div>
-			<div class="col-md-5"></div>
+			<div class="col-md-5 col-xs-3 col-sm-4"></div>
 		</div>
 		<div class="row secondPage">
-				<div class="col-md-3"></div>
-				<div class="col-md-4" id="divForPositionMap"></div>
-				<div class="col-md-5"></div>
+				<div class="col-md-3 col-xs-1"></div>
+				<div class="col-md-4 col-xs-10" id="divForPositionMap">
+						<img src="#" alt="Current Location" id="locationImage">
+						<div id='locationImageButton'>
+							<button class="btn btn-success" id="fetchWeatherDetails">
+								Fetch Weather Details
+							</button>
+						</div>
+				</div>
+				<div class="col-md-5 col-xs-1"></div>
 		</div>
-		<div class="row secondPage">
+<!-- 		<div class="row secondPage">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-					<button class="btn btn-default" id="fetchWeatherDetails">
-						Fetch Weather Details
-					</button>
 			</div>
 			<div class="col-md-4"></div>
 		</div>
-		<div class="row" id="thirdPage">
+ -->		<div class="row" id="thirdPage">
 			<table id="weatherTable">
 				<tr>
 					<th id="city" colspan="2" align="center"></th>
