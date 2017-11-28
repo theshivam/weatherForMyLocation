@@ -1,0 +1,37 @@
+#pageHeader{
+	text-align: center;
+	color: #FFF;
+}
+#firstPage{
+	position: relative;
+	top: 150px;
+}
+.secondPage{
+	visibility: hidden;
+	position: relative;
+	top: 35px;
+}
+#thirdPage{
+	visibility: hidden;
+	position: relative;
+	top: -250px;
+	left: 20%;
+}
+#weatherTable,th,td{
+	border:2px solid black;
+	height: 70%;
+	width: 70%;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+#mainBody{
+	position: relative;
+	top: 100px;
+}
+#positionOnMapImage{
+	max-width: 500px;
+}
+/*.allowLocationAccess{
+	display: inline-block;
+}*/

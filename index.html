@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather For Me</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+<body>
+<header>
+	<div class="nav navbar-inverse">
+		<h2 id="pageHeader">Weather For My Location</h2>
+	</div>
+</header>
+<section>
+	<div class="container">
+		<div class="row" id="firstPage">
+			<div class="col-md-5"></div>
+			<div class="col-md-2">
+				<button class="btn btn-primary" id="fetchCurrentLocation">Fetch Current Location</button>
+			</div>
+			<div class="col-md-5"></div>
+		</div>
+		<div class="row secondPage">
+				<div class="col-md-3"></div>
+				<div class="col-md-4" id="divForPositionMap"></div>
+				<div class="col-md-5"></div>
+		</div>
+		<div class="row secondPage">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+					<button class="btn btn-default" id="fetchWeatherDetails">
+						Fetch Weather Details
+					</button>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="row" id="thirdPage">
+			<table id="weatherTable">
+				<tr>
+					<th id="city" colspan="2" align="center"></th>
+				</tr>
+				<tr>
+					<td>Temperature :</td>
+					<td id="temperature"></td>
+				</tr>
+				<tr>
+					<td>Humidity :</td>
+					<td id="humidity"></td>
+				</tr>
+				<tr>
+					<td>Visibility :</td>
+					<td id="visibility"></td>
+				</tr>
+				<tr>
+					<td id="weatherDescription" colspan="2"></td>
+				</tr>
+			</table>
+		</div>	
+	</div>
+</section>	
+  	<script>
+  		// document.getElementById("mainBody").style.display = "none";
+
+  	</script>
+<script type="text/javascript" src="jsScript.js"></script>
+</body>
+</html>
